@@ -114,11 +114,11 @@
 										<h6 class="slider-content-text">This year's event takes place at Mount Royal University from January 26 to 28, 2018.</h6>
 										<div class="main-slider-btn-wrap">
 
-											<a href="03_products.html" class="btn btn--yellow btn--with-shadow">
+											<a href="#learnmore" class="btn btn--yellow btn--with-shadow">
 												Learn More
 											</a>
 
-											<a href="02_company.html" class="btn btn-border btn--with-shadow c-primary">
+											<a href="#tickets" class="btn btn-border btn--with-shadow c-primary">
 												Buy a ticket
 											</a>
 										</div>
@@ -140,7 +140,7 @@
 
 	<!-- Info Boxes -->
 
-	<section class="medium-padding100">
+	<section id="learnmore" class="medium-padding100">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -204,15 +204,225 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-7 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-12 col-xs-12">
-						<img src="img/mru.png" alt="iphone">
-					</div>
-					<div class="col-lg-5 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-12 col-xs-12">
 						<div class="crumina-module crumina-heading custom-color c-white">
 							<h6 class="heading-sup-title">Venue</h6>
 							<h2 class="heading-title">Mount Royal University</h2>
-							<div class="heading-text">30 Mt Royal Cir SW, Calgary
-							</div>
 						</div>
+						<img src="img/mru.png" alt="iphone">
+					</div>
+								
+					<div class="col-lg-5 col-lg-12 col-sm-12 col-xs-12">
+						<!-- Google map -->
+						<div id="map" style="height: 420px"></div>
+						<script>
+							var map;
+							function initMap() {
+								map = new google.maps.Map(document.getElementById('map'), {
+									center: {lat: 51.0131286, lng: -114.1327939},
+									zoom: 15,
+									scrollwheel: false,//set to true to enable mouse scrolling while inside the map area
+									mapTypeControlOptions: {
+										mapTypeIds: []
+									}, // here´s the array of controls
+									disableDefaultUI: true, // a way to quickly hide all controls
+    								mapTypeControl: true,
+									styles: [
+										{
+											"featureType": "water",
+											"elementType": "all",
+											"stylers": [
+												{
+													"hue": "#7fc8ed"
+												},
+												{
+													"saturation": 55
+												},
+												{
+													"lightness": -6
+												},
+												{
+													"visibility": "on"
+												}
+											]
+										},
+										{
+											"featureType": "water",
+											"elementType": "labels",
+											"stylers": [
+												{
+													"hue": "#7fc8ed"
+												},
+												{
+													"saturation": 55
+												},
+												{
+													"lightness": -6
+												},
+												{
+													"visibility": "off"
+												}
+											]
+										},
+										{
+											"featureType": "poi.park",
+											"elementType": "geometry",
+											"stylers": [
+												{
+													"hue": "#83cead"
+												},
+												{
+													"saturation": 1
+												},
+												{
+													"lightness": -15
+												},
+												{
+													"visibility": "on"
+												}
+											]
+										},
+										{
+											"featureType": "landscape",
+											"elementType": "geometry",
+											"stylers": [
+												{
+													"hue": "#f3f4f4"
+												},
+												{
+													"saturation": -84
+												},
+												{
+													"lightness": 59
+												},
+												{
+													"visibility": "on"
+												}
+											]
+										},
+										{
+											"featureType": "landscape",
+											"elementType": "labels",
+											"stylers": [
+												{
+													"hue": "#ffffff"
+												},
+												{
+													"saturation": -100
+												},
+												{
+													"lightness": 100
+												},
+												{
+													"visibility": "off"
+												}
+											]
+										},
+										{
+											"featureType": "road",
+											"elementType": "geometry",
+											"stylers": [
+												{
+													"hue": "#ffffff"
+												},
+												{
+													"saturation": -100
+												},
+												{
+													"lightness": 100
+												},
+												{
+													"visibility": "on"
+												}
+											]
+										},
+										{
+											"featureType": "road",
+											"elementType": "labels",
+											"stylers": [
+												{
+													"hue": "#bbbbbb"
+												},
+												{
+													"saturation": -100
+												},
+												{
+													"lightness": 26
+												},
+												{
+													"visibility": "on"
+												}
+											]
+										},
+										{
+											"featureType": "road.arterial",
+											"elementType": "geometry",
+											"stylers": [
+												{
+													"hue": "#ffcc00"
+												},
+												{
+													"saturation": 100
+												},
+												{
+													"lightness": -35
+												},
+												{
+													"visibility": "simplified"
+												}
+											]
+										},
+										{
+											"featureType": "road.highway",
+											"elementType": "geometry",
+											"stylers": [
+												{
+													"hue": "#ffcc00"
+												},
+												{
+													"saturation": 100
+												},
+												{
+													"lightness": -22
+												},
+												{
+													"visibility": "on"
+												}
+											]
+										},
+										{
+											"featureType": "poi.school",
+											"elementType": "all",
+											"stylers": [
+												{
+													"hue": "#d7e4e4"
+												},
+												{
+													"saturation": -60
+												},
+												{
+													"lightness": 23
+												},
+												{
+													"visibility": "on"
+												}
+											]
+										}
+									]
+								});
+								var myCenter = new google.maps.LatLng(51.0131286,-114.1327939); 
+								var marker = new google.maps.Marker({
+									position:myCenter,
+									animation:google.maps.Animation.BOUNCE
+								});
+
+								marker.setMap(map);
+							}
+						</script>
+						<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARP9fsEOW9kSiiJnyPbOrGZuUeulqVQds&callback=initMap"
+								async defer>
+						</script>
+
+						<!-- End Google map -->
 					</div>
 				</div>
 			</div>
@@ -241,14 +451,13 @@
 										<svg class="utouch-icon utouch-icon-add"><use xlink:href="#utouch-icon-add"></use></svg>
 										<svg class="utouch-icon active utouch-icon-minus"><use xlink:href="#utouch-icon-minus"></use></svg>
 									</span>
-									<span class="ovh title">Claritas est etiam processus dynamicus</span>
+									<span class="ovh title">Are there minimum age requirements to enter the event?</span>
 								</a>
 							</div>
 
 							<div id="toggleSample" class="panel-collapse collapse" aria-expanded="false" role="tree">
 								<div class="panel-info">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-									tincidunt ut laoreet dolore magna aliquam erat volutpat odio dignissim qui blandit.
+									This event is age restricted to 18+ individuals.
 								</div>
 							</div>
 						</li>
@@ -260,14 +469,17 @@
 										<svg class="utouch-icon utouch-icon-add"><use xlink:href="#utouch-icon-add"></use></svg>
 										<svg class="utouch-icon active utouch-icon-minus"><use xlink:href="#utouch-icon-minus"></use></svg>
 									</span>
-									<span class="ovh title">Gectores legere me lius quod</span>
+									<span class="ovh title">What are my parking options?</span>
 								</a>
 							</div>
 
 							<div id="toggleOne" class="panel-collapse collapse" aria-expanded="false" role="tree">
 								<div class="panel-info">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-									tincidunt ut laoreet dolore magna aliquam erat volutpat odio dignissim qui blandit.
+									Parking is available at MRU in Lot 2 (closest to event).
+									<a href="http://www.mtroyal.ca/AboutMountRoyal/TransportationParking/ParkingRates/index.htm" style="color: #0083ff" target="_blank">MRU parking prices</a>
+									<p></p>
+									There is free parking a little ways away if you want to save money and get some exercise.
+									<a href="https://www.google.ca/maps/dir//51.0106305,-114.1273953/@51.0103611,-114.1269479,122m/data=!3m1!1e3" target="_blank" class="sub-footer__link" style="color: #0083ff">Close free lot (Google Maps)</a>
 								</div>
 							</div>
 						</li>
@@ -279,14 +491,20 @@
 										<svg class="utouch-icon utouch-icon-add"><use xlink:href="#utouch-icon-add"></use></svg>
 										<svg class="utouch-icon active utouch-icon-minus"><use xlink:href="#utouch-icon-minus"></use></svg>
 									</span>
-									<span class="ovh title">Investigationes demonstraverunt lectores legere</span>
+									<span class="ovh title">What should I bring to the event?</span>
 								</a>
 							</div>
 
 							<div id="toggleTwo" class="panel-collapse collapse" aria-expanded="false" role="tree">
 								<div class="panel-info">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-									tincidunt ut laoreet dolore magna aliquam erat volutpat odio dignissim qui blandit.
+									<span style="font-weight: bold;">Tools</span><br>
+									A laptop or desktop, Wacom, Instrument, etc.
+									<p></p>
+									<span style="font-weight: bold;">Food</span><br>
+									Snacks / drinks. Some items will be available at the event, but you may want a healthier 3am snack.<br>
+									<p></p>
+									<span style="font-weight: bold;">Sleeping Supplies</span><br>
+									Pillow, sleeping bag, tooth brush and your favorite teddy bear
 								</div>
 							</div>
 						</li>
@@ -298,14 +516,49 @@
 										<svg class="utouch-icon utouch-icon-add"><use xlink:href="#utouch-icon-add"></use></svg>
 										<svg class="utouch-icon active utouch-icon-minus"><use xlink:href="#utouch-icon-minus"></use></svg>
 									</span>
-									<span class="ovh title">Mirum est notare quam littera</span>
+									<span class="ovh title">When do I get my t-shirt?</span>
 								</a>
 							</div>
 
 							<div id="toggleThree" class="panel-collapse collapse" aria-expanded="false" role="tree">
 								<div class="panel-info">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-									tincidunt ut laoreet dolore magna aliquam erat volutpat odio dignissim qui blandit.
+									T-shirts will be handed out on Sunday January 28th.
+								</div>
+							</div>
+						</li>
+						
+						<li class="accordion-panel">
+							<div class="panel-heading">
+								<a href="#toggleFour" class="accordion-heading collapsed" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
+									<span class="icons">
+										<svg class="utouch-icon utouch-icon-add"><use xlink:href="#utouch-icon-add"></use></svg>
+										<svg class="utouch-icon active utouch-icon-minus"><use xlink:href="#utouch-icon-minus"></use></svg>
+									</span>
+									<span class="ovh title">How can I contact the organizer with any questions?</span>
+								</a>
+							</div>
+
+							<div id="toggleFour" class="panel-collapse collapse" aria-expanded="false" role="tree">
+								<div class="panel-info">
+									Email <a href="mailto:globalgamejamyyc@gmail.com" style="color: #0083ff">globalgamejamyyc@gmail.com</a> or send a text to Craig @ <a href="tel:1-587-223-3444" style="color: #0083ff">587-223-3444</a>
+								</div>
+							</div>
+						</li>
+						
+						<li class="accordion-panel">
+							<div class="panel-heading">
+								<a href="#toggleFive" class="accordion-heading collapsed" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
+									<span class="icons">
+										<svg class="utouch-icon utouch-icon-add"><use xlink:href="#utouch-icon-add"></use></svg>
+										<svg class="utouch-icon active utouch-icon-minus"><use xlink:href="#utouch-icon-minus"></use></svg>
+									</span>
+									<span class="ovh title">What's the refund policy?</span>
+								</a>
+							</div>
+
+							<div id="toggleFive" class="panel-collapse collapse" aria-expanded="false" role="tree">
+								<div class="panel-info">
+									Contact Craig (organizer) and he'll sort things out. Contact info in previous FAQ item.
 								</div>
 							</div>
 						</li>
