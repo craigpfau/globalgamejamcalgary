@@ -76,7 +76,7 @@
 					<li><a href="#venue">Venue</a></li>
 					<li><a href="#faq">FAQ</a></li>
 					<li><a href="#testimonials">Testimonials</a></li>
-					<li><a href="#tickets">Tickets</a></li>
+					<!-- <li><a href="#tickets">Tickets</a></li> -->
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -111,16 +111,17 @@
 											<svg class="second-decoration utouch-icon utouch-icon-arrow-left"><use xlink:href="#utouch-icon-arrow-left"></use></svg>
 
 										</h1>
-										<h6 class="slider-content-text">This year's event takes place at<br/>Mount Royal University from January 31 to February 2, 2020.</h6>
+										<h6 class="slider-content-text">This year's event takes place online<br/>from January 27 to January 31, 2021.</h6>
+										</br>
 										<div class="main-slider-btn-wrap">
 
 											<a href="#learnmore" class="btn btn--yellow btn--with-shadow">
 												Learn More
 											</a>
 
-											<a href="#tickets" class="btn btn-border btn--with-shadow c-primary">
+											<!-- <a href="#tickets" class="btn btn-border btn--with-shadow c-primary">
 												Buy a ticket
-											</a>
+											</a> -->
 										</div>
 									</div>
 								</div>
@@ -196,226 +197,14 @@
 		<div class="bg-primary-color bg-5 medium-padding120">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-7 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-12 col-xs-12">
+					<div class="col-lg-12 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-12 col-xs-12">
 						<div class="crumina-module crumina-heading custom-color c-white">
 							<h6 class="heading-sup-title">Venue</h6>
-							<h2 class="heading-title" style="color:#FECF39!important">Mount Royal University</h2>
+							<h2 class="heading-title" style="color:#FECF39!important">Your Own Home</h2>
 						</div>
-						<img src="img/mru.png" alt="iphone">
-					</div>
-								
-					<div class="col-lg-5 col-lg-12 col-sm-12 col-xs-12">
-						<!-- Google map -->
-						<div id="map" style="height: 420px"></div>
-						<script>
-							var map;
-							function initMap() {
-								map = new google.maps.Map(document.getElementById('map'), {
-									center: {lat: 51.0131286, lng: -114.1327939},
-									zoom: 15,
-									scrollwheel: false,//set to true to enable mouse scrolling while inside the map area
-									mapTypeControlOptions: {
-										mapTypeIds: []
-									}, // here´s the array of controls
-									disableDefaultUI: true, // a way to quickly hide all controls
-    								mapTypeControl: true,
-									styles: [
-										{
-											"featureType": "water",
-											"elementType": "all",
-											"stylers": [
-												{
-													"hue": "#7fc8ed"
-												},
-												{
-													"saturation": 55
-												},
-												{
-													"lightness": -6
-												},
-												{
-													"visibility": "on"
-												}
-											]
-										},
-										{
-											"featureType": "water",
-											"elementType": "labels",
-											"stylers": [
-												{
-													"hue": "#7fc8ed"
-												},
-												{
-													"saturation": 55
-												},
-												{
-													"lightness": -6
-												},
-												{
-													"visibility": "off"
-												}
-											]
-										},
-										{
-											"featureType": "poi.park",
-											"elementType": "geometry",
-											"stylers": [
-												{
-													"hue": "#83cead"
-												},
-												{
-													"saturation": 1
-												},
-												{
-													"lightness": -15
-												},
-												{
-													"visibility": "on"
-												}
-											]
-										},
-										{
-											"featureType": "landscape",
-											"elementType": "geometry",
-											"stylers": [
-												{
-													"hue": "#f3f4f4"
-												},
-												{
-													"saturation": -84
-												},
-												{
-													"lightness": 59
-												},
-												{
-													"visibility": "on"
-												}
-											]
-										},
-										{
-											"featureType": "landscape",
-											"elementType": "labels",
-											"stylers": [
-												{
-													"hue": "#ffffff"
-												},
-												{
-													"saturation": -100
-												},
-												{
-													"lightness": 100
-												},
-												{
-													"visibility": "off"
-												}
-											]
-										},
-										{
-											"featureType": "road",
-											"elementType": "geometry",
-											"stylers": [
-												{
-													"hue": "#ffffff"
-												},
-												{
-													"saturation": -100
-												},
-												{
-													"lightness": 100
-												},
-												{
-													"visibility": "on"
-												}
-											]
-										},
-										{
-											"featureType": "road",
-											"elementType": "labels",
-											"stylers": [
-												{
-													"hue": "#bbbbbb"
-												},
-												{
-													"saturation": -100
-												},
-												{
-													"lightness": 26
-												},
-												{
-													"visibility": "on"
-												}
-											]
-										},
-										{
-											"featureType": "road.arterial",
-											"elementType": "geometry",
-											"stylers": [
-												{
-													"hue": "#ffcc00"
-												},
-												{
-													"saturation": 100
-												},
-												{
-													"lightness": -35
-												},
-												{
-													"visibility": "simplified"
-												}
-											]
-										},
-										{
-											"featureType": "road.highway",
-											"elementType": "geometry",
-											"stylers": [
-												{
-													"hue": "#ffcc00"
-												},
-												{
-													"saturation": 100
-												},
-												{
-													"lightness": -22
-												},
-												{
-													"visibility": "on"
-												}
-											]
-										},
-										{
-											"featureType": "poi.school",
-											"elementType": "all",
-											"stylers": [
-												{
-													"hue": "#d7e4e4"
-												},
-												{
-													"saturation": -60
-												},
-												{
-													"lightness": 23
-												},
-												{
-													"visibility": "on"
-												}
-											]
-										}
-									]
-								});
-								var myCenter = new google.maps.LatLng(51.0131286,-114.1327939); 
-								var marker = new google.maps.Marker({
-									position:myCenter,
-									animation:google.maps.Animation.BOUNCE
-								});
-
-								marker.setMap(map);
-							}
-						</script>
-						<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARP9fsEOW9kSiiJnyPbOrGZuUeulqVQds&callback=initMap"
-								async defer>
-						</script>
-
-						<!-- End Google map -->
+						<div style="text-align: center;">
+							<img src="img/houses.png" alt="houses">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -455,7 +244,7 @@
 							</div>
 						</li>
 
-						<li class="accordion-panel">
+						<!-- <li class="accordion-panel">
 							<div class="panel-heading">
 								<a href="#toggleOne" class="accordion-heading collapsed" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
 									<span class="icons">
@@ -475,9 +264,9 @@
 									<a href="https://www.google.ca/maps/dir//51.0106305,-114.1273953/@51.0103611,-114.1269479,122m/data=!3m1!1e3" target="_blank" class="sub-footer__link" style="color: #0083ff">Close free lot (Google Maps)</a>
 								</div>
 							</div>
-						</li>
+						</li> -->
 						
-						<li class="accordion-panel">
+						<!-- <li class="accordion-panel">
 							<div class="panel-heading">
 								<a href="#toggleTwo" class="accordion-heading collapsed" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
 									<span class="icons">
@@ -539,7 +328,7 @@ Snacks / drinks. Some snack items will be available at the event, but you may wa
 									T-shirts will be handed out on Friday January 31st.
 								</div>
 							</div>
-						</li>
+						</li> -->
 						
 						<li class="accordion-panel">
 							<div class="panel-heading">
@@ -554,12 +343,12 @@ Snacks / drinks. Some snack items will be available at the event, but you may wa
 
 							<div id="toggleFive" class="panel-collapse collapse" aria-expanded="false" role="tree">
 								<div class="panel-info">
-									Email <a href="mailto:craig@albertamakesgames.com" style="color: #0083ff">craig@albertamakesgames.com</a> or send a text to Craig @ <a href="tel:1-587-223-3444" style="color: #0083ff">587-223-3444</a>
+									Email <a href="mailto:info@calgarygamedevelopers.com" style="color: #0083ff">info@calgarygamedevelopers.com</a>
 								</div>
 							</div>
 						</li>
 						
-						<li class="accordion-panel">
+						<!-- <li class="accordion-panel">
 							<div class="panel-heading">
 								<a href="#toggleSix" class="accordion-heading collapsed" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
 									<span class="icons">
@@ -575,7 +364,7 @@ Snacks / drinks. Some snack items will be available at the event, but you may wa
 									Contact Craig (organizer) and he'll sort things out. Contact info in previous FAQ item.
 								</div>
 							</div>
-						</li>
+						</li> -->
 
 					</ul>
 				</div>
@@ -602,7 +391,7 @@ Snacks / drinks. Some snack items will be available at the event, but you may wa
 
 						<div class="author-info">
 							<p class="h6 author-name">Scott</p>
-							<div class="author-company">10 Year Participant</div>
+							<div class="author-company">11 Year Participant</div>
 						</div>
 
 						<h6 class="testimonial-text">
@@ -619,7 +408,7 @@ Snacks / drinks. Some snack items will be available at the event, but you may wa
 
 						<div class="author-info">
 							<p class="h6 author-name">Stephen</p>
-							<div class="author-company">5 Year Participant</div>
+							<div class="author-company">6 Year Participant</div>
 						</div>
 
 						<h6 class="testimonial-text">
@@ -636,7 +425,7 @@ Snacks / drinks. Some snack items will be available at the event, but you may wa
 
 						<div class="author-info">
 							<p class="h6 author-name">Owen</p>
-							<div class="author-company">9 Year Participant</div>
+							<div class="author-company">10 Year Participant</div>
 						</div>
 
 						<h6 class="testimonial-text">
@@ -654,7 +443,7 @@ Snacks / drinks. Some snack items will be available at the event, but you may wa
 
 	<!-- Pricing Tables -->
 
-	<section id="tickets" class="background-contain bg-13 medium-padding100">
+	<!-- <section id="tickets" class="background-contain bg-13 medium-padding100">
 			<div class="container">
 				<div class="row">
 					<div class="pricing-wrap">
@@ -728,7 +517,7 @@ Snacks / drinks. Some snack items will be available at the event, but you may wa
 					</div>
 				</div>
 			</div>
-	</section>
+	</section> -->
 
 	<!-- ... end Pricing Tables -->
 
@@ -762,7 +551,7 @@ Snacks / drinks. Some snack items will be available at the event, but you may wa
 							<br>
 						  In 2019, we were proud to be one of 860 locations in 113 countries which created 9010 games by 47,006 registered participants.<br>
   							<br>
-						  We look forward to continue the tradition in 2020 of bringing people together from different skillsets to create amazing video games, all while fighting sleep deprivation.</p>
+						  We look forward to continue the tradition in 2021 of bringing people together from different skillsets to create amazing video games, all while fighting sleep deprivation.</p>
 						<a href="https://globalgamejam.org/2020/jam-sites/global-game-jam-calgary" target="_blank" class="learn-more">register on globalgamejam.com</a>
 					</div>
 
@@ -783,7 +572,7 @@ Snacks / drinks. Some snack items will be available at the event, but you may wa
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<span>
-						Copyright © 2019 <a href="http://www.craigpfau.com" target="_blank"><span class="sub-footer__link">Craig Pfau</span></a>
+						Copyright © 2020 <a href="http://www.craigpfau.com" target="_blank"><span class="sub-footer__link">Craig Pfau</span></a>
 					</span>
 				</div>
 			</div>
